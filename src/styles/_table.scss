@@ -1,0 +1,40 @@
+@import './variables';
+
+.table {
+    margin: 3pc 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: left;
+
+    &__row{
+        padding: 5px;
+
+        &:nth-child(odd){
+            background-color: $bg-color-table;
+        }
+
+        &--cell{
+            padding: 5px;
+        }
+    }
+
+    &__headers {
+        padding:5px;
+        line-height: 35px;
+        white-space: nowrap;
+
+        &--cell{
+            padding: 5px;
+        }
+    }
+
+    @media(max-width: 600px){
+        &--responsive-mobile{
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+        }
+    }
+}

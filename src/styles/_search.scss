@@ -1,0 +1,28 @@
+@import './variables';
+
+.search-panel {
+    font-size: $font-l;
+    font-weight: 500;
+    margin-top: 5pc;
+
+    &__label{
+        padding: 15px 10px;
+    }
+
+    &__input {
+        border: 1px solid $color-border;
+        font-size: $font-s;
+    }
+
+    &__button {
+        background-color: $bg-color-info;
+        font-size: $font-s;
+        margin-left: 5px;
+        border-radius: 0;
+    }
+
+    &__error-msg {
+        margin: 10px 0;
+        display: inline-block;
+    }
+}

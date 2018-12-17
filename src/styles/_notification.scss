@@ -1,0 +1,23 @@
+
+@import './variables';
+
+.notification-panel {
+    font-size: $font-s;
+    padding: 10px;
+    line-height: 25px;
+    position: relative;
+    display: block;
+    align-items: center;
+
+    &--info{
+        @extend .notification-panel;
+        background-color: $bg-color-info;
+        color: $color-info;
+    }
+
+    &--error{
+        @extend .notification-panel;
+        background-color: $bg-color-error;
+        color: $color-error;
+    }
+}

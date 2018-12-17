@@ -1,0 +1,20 @@
+@import './variables';
+
+.not-found{
+    display: grid;
+    height: 95vh;
+    place-content: center center;
+
+    &__content{
+        font-size: $font-l;
+
+        &--red-text{
+            margin-top: 0;
+            font-weight: 650;
+            font-size: $font-xxxl;
+            color: $color-error;
+        }
+    }
+}
+
+
